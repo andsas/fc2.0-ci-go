@@ -3,10 +3,10 @@ on: [push]
 jobs:
   check-applications:
     runs-on: ubuntu-latest
-    staps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-go@v2
-      with:
-        g0-version: 1.15
-    - run: go test
-    - run: go run math.go
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          g0-version: 1.15
+      - run: go test
+      - run: go run math.go
