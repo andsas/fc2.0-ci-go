@@ -34,4 +34,3 @@ jobs:
           context: .
           push: true
           tags: andsas/fc2.0-ci-go:latest
-              name: Login to DockerHub
